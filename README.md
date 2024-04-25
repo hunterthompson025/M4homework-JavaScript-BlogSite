@@ -14,6 +14,10 @@ This exercise can serve as an example of functions in JavaScript alongside Web A
 ## Deployed Application
 https://hunterthompson025.github.io/M4homework-JavaScript-BlogSite/
 
+
+## Screenshot of Application
+![BlogPost Website](https://github.com/hunterthompson025/M4homework-JavaScript-BlogSite/assets/163206449/364c1cf4-2f4f-4c0d-afb9-7fe23378cc09)
+
 ## Credits
 
 N/A
@@ -21,3 +25,4 @@ N/A
 ## License
 
 Please refer to the LICENSE in the repo.
+
