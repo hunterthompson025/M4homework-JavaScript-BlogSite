@@ -1,0 +1,156 @@
+:root {
+  --dark-background: #001b44;
+  --dark-color: #bebebe;
+  --slider-dark-background:#111;
+  --light-background:#f0ead6;
+  --light-color: black;
+  --slider-light-background:rgb(29, 128, 210);
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+header span {
+   position: absolute;
+   right: 0;
+   bottom: 25%;
+}
+
+.row {
+  position: relative;
+}
+
+.row-container {
+  position: absolute;
+  bottom: 10px;
+}
+
+.row p {
+  font-size: 15px;
+}
+
+.dark-p {
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+}
+
+.light-p {
+  position: absolute;
+  left: 160px;
+  bottom: 0;
+}
+
+
+/* Dark Mode */
+.dark {
+  background-color: var(--dark-background);
+  height: 100vh;
+  color: var(--dark-color)
+ 
+}
+
+.dark li a {
+  color: var(--dark-color);
+}
+
+.dark li a:hover {
+  background-color: var(--slider-dark-background);
+}
+
+/* Light Mode */
+.light {
+  background-color: var(--light-background);
+  color: var(--light-color);
+  height: 100vh;
+}
+
+.light li a {
+  color: var(--light-color);
+}
+
+.light li a:hover {
+  background-color: var(--slider-light-background);
+}
+
+/* Styling the Switch button */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+  left: 100px;
+  bottom: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--slider-dark-background);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--slider-light-background);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--slider-light-background);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

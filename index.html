@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+    <title>Timber Time Home</title>
+</head>
+
+<body>
+
+    <section class="container dark">
+
+        <header>
+            <h1>Timber Time</h1>
+        </header>
+
+        <nav class="row toggle">
+            <div class="row-container">
+                <div class="col">
+                    <p class="dark-p">DARK MODE</p>
+                </div>
+                <label class="switch col">
+                    <input type="checkbox" id="theme-switcher">
+                    <span class="slider round"></span>
+                </label>
+                <div class="col">
+                <p class="light-p">LIGHT MODE</p>
+                </div>
+            </div>
+        </nav>
+
+        <section>
+            <section class="form card">
+                <h2>Let's talk about woodworking!</h2>
+                <form method="post"></form>
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username">
+                    </div>
+                    <div class="input-group">
+                        <label for="title">Title</label>
+                        <input type="text" name="title" id="title">
+                    </div>
+                    <div class="input-group">
+                        <label for="content">Content</label>
+                        <textarea name="content" id="content"></textarea>
+                    </div>
+                    <div id="msg"></div>
+                    <button type="button" class="submit" id="submit">SUBMIT</button>
+                </form>
+            </section>
+        </section>
+    </section>
+
+    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
+
+</body>
+
+</html>
