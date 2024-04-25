@@ -11,6 +11,8 @@ N/A
 
 This exercise can serve as an example of functions in JavaScript alongside Web API skills. This can be used as an example when creating functions in JavaScript as well as using Web API skills to design websites in the future.
 
+## Deployed Application
+https://hunterthompson025.github.io/M4homework-JavaScript-BlogSite/
 
 ## Credits
 
